@@ -1,0 +1,6 @@
+{
+  "name": "Deconil.ma",
+  "description": "Deconil.ma est un spécialiste marocain des solutions d'isolation thermique, étanchéité, revêtements de sols industriels et travaux techniques pour les professionnels et particuliers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

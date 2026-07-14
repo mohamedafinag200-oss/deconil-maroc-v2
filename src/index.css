@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-arabic: "Noto Kufi Arabic", sans-serif;
+  
+  --color-gold: #C89B3C;
+  --color-gold-light: #DFBA6B;
+  --color-gold-dark: #A07826;
+  --color-dark: #121212;
+  --color-dark-light: #1A1A1A;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Custom transitions and scroll behaviors */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #121212;
+  overflow-x: hidden;
+  transition: background-color 300ms, color 300ms;
+}
+
+html.dark body {
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+/* Masonry grid transitions and custom styling */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C89B3C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A07826;
+}
+
+/* Language direction styling helper */
+.rtl-dir {
+  direction: rtl;
+}
+.ltr-dir {
+  direction: ltr;
+}
